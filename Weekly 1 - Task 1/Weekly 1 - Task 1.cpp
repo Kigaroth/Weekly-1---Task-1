@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 
+
 std::string full_name = "";
 std::string Initial ="";
 std::string date_of_birth = "";
@@ -10,31 +11,36 @@ std::string age = "";
 std::string phone_number = "";
 
 int main() {
-	std::cout << "Hello!\n\n";
-	std::cout << "Please enter your full name:  ";
+	std::cout << " Hello!\n\n";
+	
+	//Full name//
+	std::cout << " Please enter your full name: ";
 	std::getline(std::cin, full_name);
-	std::cout << "Thank you. \n\n";
+	std::cout << " Thank you. \n\n";
 
-	
-	std::cout << "Please enter the initial of your name:  ";
+	//Initial letter//
+	std::cout << " Please enter the initial of your name: ";
 	std::getline(std::cin, Initial);
-	std::cout << "Thank you. \n\n";
+	std::cout << " Thank you. \n\n";
 
-
-	std::cout << "Please enter your age:  ";
+	//Age//
+	std::cout << " Please enter your age: ";
 	std::getline(std::cin, age);
-	std::cout << "Thank you. \n\n";
+	std::cout << " Thank you. \n\n";
 
-	std::cout << "Please enter your date of birth:  ";
-	std::getline(std::cin, date_of_birth);
-	std::cout << "Thank you. \n\n";
-
-	std::cout << "Please enter your phone number:  ";
+	//Phone number//
+	std::cout << " Please enter your phone number: ";
 	std::getline(std::cin, phone_number);
-	std::cout << "Thank you. \n\n";
+	std::cout << " Thank you. \n\n";
 	
+	//Date of birth//
+	std::cout << " Please enter your date of birth (example 26/10/1985): ";
+	std::getline(std::cin, date_of_birth);
+	std::cout << " Thank you. \n\n";
+	
+	//Final info//
 	system("cls");
-	std::cout << "Here is your info: \n\n" "\t Name| " << full_name;
+	std::cout << " Here is the information you have submitted: \n\n" "\t Name| " << full_name;
 	std::cout << "\n\t Initial| " << Initial;
 	std::cout << "\n\t Age| " << age;
 	std::cout << "\n\t Phone number| " << phone_number;
